@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Pavithra's Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Pavithra<span>.dev</span></a>
+    <ul>
+      <li><a class="nav-link" href="index.html">Back to site</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="admin-shell">
+
+  <!-- Login view -->
+  <div id="loginView">
+    <h1>Admin login</h1>
+    <p class="sub">Manage your projects.</p>
+    <div class="login-card">
+      <p class="login-error" id="loginError"></p>
+      <form id="loginForm">
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Log in</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Dashboard view -->
+  <div id="dashboardView" style="display:none;">
+    <div class="admin-header-row">
+      <div>
+        <h1>Dashboard</h1>
+        <span class="logged-in-as" id="loggedInAs"></span>
+      </div>
+      <button class="btn btn-ghost" id="logoutBtn">Log out</button>
+    </div>
+
+    <div class="admin-section">
+      <h2>Add a project</h2>
+      <form class="admin-form" id="projectForm">
+        <div class="field full">
+          <label for="p-title">Title</label>
+          <input type="text" id="p-title" required>
+        </div>
+        <div class="field full">
+          <label for="p-description">Description</label>
+          <input type="text" id="p-description" required>
+        </div>
+        <div class="field">
+          <label for="p-tech">Tech stack (comma separated)</label>
+          <input type="text" id="p-tech" placeholder="Java, Spring Boot, MySQL">
+        </div>
+        <div class="field">
+          <label for="p-github">GitHub link</label>
+          <input type="url" id="p-github" placeholder="https://github.com/...">
+        </div>
+        <div class="field full">
+          <label for="p-image">Image URL</label>
+          <input type="url" id="p-image" placeholder="https://...">
+        </div>
+        <div class="field full">
+          <button type="submit" class="btn btn-primary">Add project</button>
+          <span class="form-status" id="projectFormStatus" role="status"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="admin-section">
+      <h2>Existing projects</h2>
+      <ul class="admin-list" id="projectList">
+        <li>Loading…</li>
+      </ul>
+    </div>
+
+    <div class="admin-section">
+      <h2>Contact messages</h2>
+      <ul class="admin-list" id="contactList">
+        <li>Loading…</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

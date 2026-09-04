@@ -1,0 +1,105 @@
+.admin-shell {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+}
+
+.admin-shell h1 {
+  font-size: 1.6rem;
+  margin: 0 0 6px;
+}
+
+.admin-shell .sub {
+  color: var(--ink-soft);
+  margin: 0 0 32px;
+}
+
+.login-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 28px;
+  max-width: 380px;
+}
+
+.login-card .field { margin-bottom: 16px; }
+
+.login-error {
+  color: #A8412F;
+  font-size: 0.88rem;
+  min-height: 1.2em;
+  margin-bottom: 8px;
+}
+
+.admin-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.admin-header-row .logged-in-as {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  padding: 7px 14px;
+}
+.btn-ghost:hover { border-color: var(--ink); color: var(--ink); }
+
+.admin-section {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.admin-section h2 {
+  font-size: 1.1rem;
+  margin: 0 0 18px;
+}
+
+.admin-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 16px;
+}
+
+.admin-form .field.full { grid-column: 1 / -1; }
+
+.admin-list { list-style: none; padding: 0; margin: 0; }
+
+.admin-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.admin-list li:first-child { border-top: none; }
+
+.admin-list .item-title { font-weight: 600; margin: 0 0 4px; }
+.admin-list .item-meta { font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
+
+.btn-danger {
+  background: transparent;
+  border: 1px solid #C0554A;
+  color: #A8412F;
+  font-size: 0.82rem;
+  padding: 6px 12px;
+  flex-shrink: 0;
+}
+.btn-danger:hover { background: #A8412F; color: #fff; }
+
+@media (max-width: 560px) {
+  .admin-form { grid-template-columns: 1fr; }
+}

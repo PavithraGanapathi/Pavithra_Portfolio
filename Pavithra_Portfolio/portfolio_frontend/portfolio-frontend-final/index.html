@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pavithra Ganapathi — B.E CSE (Honours AI ML)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="#" class="brand">Pavithra Ganapathi <span>B.E CSE (Honours AI ML)</span></a>
+    <ul>
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#internships">Internships</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status-badge">Open to relocate, anywhere in India</span>
+      <h1>Backend developer, Java &amp; Spring Boot.</h1>
+      <p class="pitch">
+        Computer Science graduate building REST APIs with Spring Boot and MySQL.
+        Looking for my first role as a Junior Java or Full Stack Developer.
+      </p>
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What I work with</h2>
+      <p>Backend-focused, with enough front-end and cloud to ship a project end to end.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">JPA / Hibernate</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Data</h3>
+        <div class="tags">
+          <span class="tag">MySQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">Streamlit</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Cloud &amp; tools</h3>
+        <div class="tags">
+          <span class="tag">AWS EC2</span>
+          <span class="tag">Git</span>
+          <span class="tag">Postman</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p>Pulled live from my Spring Boot API — this list updates whenever I add a new project.</p>
+    </div>
+    <div id="projectsGrid" class="projects-grid">
+      <p class="empty-note">Loading projects…</p>
+    </div>
+  </div>
+</section>
+
+<section class="internships" id="internships">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Internship Experience</h2>
+      <p>Practical experience, responsibilities, and technologies I have worked with during my internships.</p>
+    </div>
+
+    <div id="internshipsGrid" class="internships-grid">
+      <article class="internship-card">
+        <div class="internship-header">
+          <div>
+            <h3>Data Science Intern — Approlabs</h3>
+            <p class="internship-duration">June 2025 – September 2025</p>
+          </div>
+        </div>
+
+        <p class="internship-summary">
+          Worked on <strong>AIVALNYX</strong>, an AI-powered handwritten exam evaluation platform focused on improving the accuracy and efficiency of handwritten text recognition.
+        </p>
+
+        <ul class="internship-points">
+          <li>Developed a <strong>Streamlit-based labeling tool</strong> to create and manage labeled handwritten-text datasets.</li>
+          <li>Collected and prepared approximately <strong>10,000 handwritten text-line samples</strong> for model training and evaluation.</li>
+          <li>Fine-tuned <strong>TrOCR (Transformer-based OCR)</strong> using Hugging Face's <strong>Seq2Seq Trainer</strong> for handwritten text recognition.</li>
+          <li>Achieved approximately <strong>60% recognition accuracy</strong> during the initial model evaluation.</li>
+          <li>Worked on <strong>OCR preprocessing and data preparation</strong> to improve recognition quality.</li>
+          <li>Used <strong>Python, Streamlit, PyTorch/Transformers, and OCR technologies</strong> throughout the project.</li>
+          <li>Gained practical experience in <strong>machine learning, computer vision, NLP, dataset preparation, model fine-tuning, and AI-based document processing</strong>.</li>
+          <li>Integrated a <strong>Qwen LLM</strong> with the fine-tuned TrOCR workflow and achieved approximately <strong>90% accuracy</strong> in handwritten text recognition.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Get in touch</h2>
+      <p>Hiring, feedback, or just want to talk backend architecture — send a message.</p>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <span class="form-status" id="formStatus" role="status"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span>© <span id="year"></span> Pavithra</span>
+  <a href="admin.html">Admin</a>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
